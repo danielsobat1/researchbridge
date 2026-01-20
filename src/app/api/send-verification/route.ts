@@ -69,16 +69,16 @@ export async function POST(req: NextRequest) {
       html: emailHtml,
     });
 
-    if (result.error) {
-      console.error("Resend error:", result.error);
+    if (result.error || !result.data?.id) {
+      console.error("Resend error:", result.error || result);
       return NextResponse.json(
-        { error: result.error.message || "Failed to send verification email" },
+        { error: result.error?.message || "Failed to send verification email" },
         { status: 500 }
       );
     }
 
-    console.log(`✅ Verification email sent to ${email}`);
-    return NextResponse.json({ success: true, message: "Verification email sent", id: result.data?.id });
+    console.log(`✅ Verification email sent to ${email} (id: ${result.data.id})`);
+    return NextResponse.json({ success: true, message: "Verification email sent", id: result.data.id });
   } catch (error: any) {
     console.error("Email sending error:", error);
     return NextResponse.json(

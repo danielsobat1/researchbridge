@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { isValidEmail, isValidUsername, generateVerificationToken, saveVerificationToken } from "@/app/lib/auth";
+import { isValidEmail, isValidUsername, createUser, saveUser } from "@/app/lib/auth";
 
 export default function AuthPage() {
   const router = useRouter();
@@ -70,44 +70,23 @@ export default function AuthPage() {
     setLoading(true);
 
     try {
-      // Generate verification token
-      const token = generateVerificationToken();
-      saveVerificationToken(email, token);
+      // Create user directly without email verification
+      const newUser = createUser(email, username, firstName);
+      
+      // Add profile data
+      newUser.age = age ? parseInt(age, 10) : undefined;
+      newUser.university = isUBC ? "UBC" : undefined;
+      newUser.interests = interests
+        .split(",")
+        .map((i) => i.trim())
+        .filter((i) => i.length > 0);
+      newUser.verified = true; // Auto-verify for now
 
-      // Build verification URL
-      const baseUrl = typeof window !== "undefined" ? window.location.origin : "http://localhost:3000";
-      const verificationUrl = `${baseUrl}/verify?email=${encodeURIComponent(email)}&username=${encodeURIComponent(username)}&firstName=${encodeURIComponent(firstName)}&token=${token}`;
+      // Save user to localStorage
+      saveUser(newUser);
 
-      // Prepare user data to send in email
-      const userData = {
-        age: age ? parseInt(age, 10) : undefined,
-        university: isUBC ? "UBC" : undefined,
-        interests: interests
-          .split(",")
-          .map((i) => i.trim())
-          .filter((i) => i.length > 0),
-      };
-
-      // Send verification email
-      const emailResponse = await fetch("/api/send-verification", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          username,
-          firstName,
-          token,
-          verificationUrl,
-          userData,
-        }),
-      });
-
-      const emailJson = await emailResponse.json().catch(() => null);
-      if (!emailResponse.ok) {
-        throw new Error(emailJson?.error || "Failed to send verification email");
-      }
-
-      setVerificationSent(true);
+      // Redirect to home
+      router.push("/");
     } catch (err: any) {
       setError(err.message || "Something went wrong");
     } finally {
@@ -115,32 +94,6 @@ export default function AuthPage() {
     }
   };
 
-  if (verificationSent) {
-    return (
-      <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
-        <div className="w-full max-w-md text-center">
-          <div className="text-4xl mb-4">📧</div>
-          <h1 className="text-2xl font-bold mb-2">Check your email!</h1>
-          <p className="text-white/70 mb-4">
-            We've sent a verification link to <span className="font-semibold">{email}</span>
-          </p>
-          <p className="text-white/60 text-sm mb-6">
-            Click the link in your email to verify your account and complete sign-up.
-          </p>
-          <button
-            onClick={() => {
-              setVerificationSent(false);
-              setStep("email");
-              setEmail("");
-              setUsername("");
-            }}
-            className="rounded-xl border border-white/20 px-6 py-2 text-sm hover:bg-white/10"
-          >
-            Back to sign up
-          </button>
-        </div>
-      </main>
-    );
   }
 
   return (
