@@ -23,11 +23,11 @@
 }
 
 .bg-white {
-  background-color: var(--accent) !important;
+  background-color: var(--card-bg) !important;
 }
 
 .text-black {
-  color: var(--background) !important;
+  color: var(--foreground) !important;
 }
 
 .hover\:bg-white\/90:hover {

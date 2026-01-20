@@ -113,14 +113,6 @@ export default function Home() {
           >
             Browse Opportunities
           </a>
-          {!user && (
-            <a
-              href="/auth"
-              className="rounded-xl border border-white/20 px-5 py-3 text-center text-white hover:bg-white/10 sm:col-span-2 md:col-span-1"
-            >
-              Create Account
-            </a>
-          )}
         </div>
 
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -142,6 +134,17 @@ export default function Home() {
             <span>Resume Analyzer</span>
           </a>
         </div>
+
+        {!user && (
+          <div className="mt-6">
+            <a
+              href="/auth"
+              className="block rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-center text-white font-semibold hover:bg-white/10"
+            >
+              Create Account
+            </a>
+          </div>
+        )}
       </section>
     </main>
   );
