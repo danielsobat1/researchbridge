@@ -1,6 +1,6 @@
 // app/api/send-verification/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import { Resend } from "resend/legacy";
 
 // Ensure Node.js runtime so server env vars are available
 export const runtime = "nodejs";
