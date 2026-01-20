@@ -102,8 +102,9 @@ export default function AuthPage() {
         }),
       });
 
+      const emailJson = await emailResponse.json().catch(() => null);
       if (!emailResponse.ok) {
-        throw new Error("Failed to send verification email");
+        throw new Error(emailJson?.error || "Failed to send verification email");
       }
 
       setVerificationSent(true);

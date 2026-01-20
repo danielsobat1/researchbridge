@@ -2,6 +2,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// Ensure Node.js runtime so server env vars are available
+export const runtime = "nodejs";
+
 const resendApiKey = process.env.RESEND_API_KEY;
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
@@ -69,7 +72,7 @@ export async function POST(req: NextRequest) {
     if (result.error) {
       console.error("Resend error:", result.error);
       return NextResponse.json(
-        { error: "Failed to send verification email" },
+        { error: result.error.message || "Failed to send verification email" },
         { status: 500 }
       );
     }
