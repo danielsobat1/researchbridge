@@ -1,0 +1,22 @@
+{
+  "nameOnPage": "Daniel McDonald",
+  "researchClassification": [
+    "High dimensional data analysis",
+    "Computational methods in statistics",
+    "Statistical theory and modeling",
+    "Machine learning",
+    "Epidemiology (except nutritional and veterinary epidemiology)"
+  ],
+  "interests": [
+    "Methods and models for epidemiological forecasting",
+    "Estimation and quantification of prediction risk",
+    "Evaluating the predictive abilities of complex dependent data",
+    "Application of statistical learning techniques to time series prediction problems",
+    "Investigations of cross-validation and the bootstrap for risk estimation"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

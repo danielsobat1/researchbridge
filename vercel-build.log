@@ -1,0 +1,35 @@
+Vercel CLI 50.4.6
+WARN! Build not running on Vercel. System environment variables will not be available.
+WARNING: You should not upload the `.next` directory.
+Installing dependencies...
+
+up to date in 848ms
+
+159 packages are looking for funding
+  run `npm fund` for details
+Detected Next.js version: 16.1.3
+Running "npm run build"
+
+> research-bridge@0.1.0 build
+> next build
+
+▲ Next.js 16.1.3 (Turbopack)
+- Environments: .env.local, .env.production
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.3s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+Error: supabaseUrl is required.
+    at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:740:9)
+    at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:768:12)
+    at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:781:12)
+    at Object.m (.next/server/chunks/[turbopack]_runtime.js:790:18)
+    at Object.<anonymous> (.next/server/app/api/users/route.js:6:3)
+
+> Build error occurred
+Error: Failed to collect page data for /api/users
+    at ignore-listed frames {
+  type: 'Error'
+}
+Error: Command "npm run build" exited with 1

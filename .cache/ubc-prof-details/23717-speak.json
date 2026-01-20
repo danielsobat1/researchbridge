@@ -1,0 +1,30 @@
+{
+  "nameOnPage": "Thomas Speak",
+  "researchClassification": [
+    "Astrochemistry",
+    "Development and applications of spectroscopic and structural techniques",
+    "Reaction kinetics and dynamics",
+    "Chemical thermodynamics and energetics",
+    "Computational chemistry"
+  ],
+  "interests": [
+    "atmospheric chemistry",
+    "combustion chemistry",
+    "astrochemistry",
+    "origins of life",
+    "reaction kinetics",
+    "energetic materials"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "photoionization mass spectrometry",
+    "ab-initio chemistry",
+    "master equation calculations",
+    "Atmospheric modelling",
+    "Astrochemical modelling"
+  ]
+}

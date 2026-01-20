@@ -1,0 +1,34 @@
+{
+  "nameOnPage": "Luis Silva",
+  "researchClassification": [
+    "Life histories",
+    "Biological evolution, n.e.c."
+  ],
+  "interests": [
+    "Disease Ecology",
+    "evolutionary ecology",
+    "Parasitology",
+    "Microbiology and Immunology",
+    "host-parasite interactions",
+    "Ecological immunology",
+    "Virulence evolution",
+    "Tolerance evolution"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "OMICs (e.g., RNAseq, genomics, proteomics)",
+    "(Fluorescence) Microscopy",
+    "cell culture",
+    "Experimental evolution",
+    "Insect and parasite handling",
+    "Functional genetics (e.g., RNAseq)",
+    "Phase to phase extractions",
+    "Energy, resources and oxidative stress quantification",
+    "Aedes, Anopheles, Drosophila, Tribolium",
+    "Plasmodium, bacteria, microsporidia, fungi"
+  ]
+}

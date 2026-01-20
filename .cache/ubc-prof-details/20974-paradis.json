@@ -1,0 +1,38 @@
+{
+  "nameOnPage": "Gregory Paradis",
+  "researchClassification": [
+    "Design and analysis of sytems",
+    "Modelling and applications of systems",
+    "Production systems engineering",
+    "Systems engineering, n.e.c.",
+    "Programming in operational research (including linear and nonlinear programming)",
+    "Combinatorial and network optimization (including programming and metaheuristics)",
+    "Optimization under uncertainty (including stochastic and robust optimization)",
+    "Bilevel optimization and game theory",
+    "Stochastic models (including queueing and simulation)",
+    "Decisions and risk analysis"
+  ],
+  "interests": [
+    "Forest management",
+    "Forest Operations",
+    "forest estate modelling",
+    "carbon budget modelling",
+    "Ecosystem services",
+    "cumulative effects",
+    "Operations Research",
+    "industrial engineering",
+    "computer science",
+    "forest economics",
+    "forest sector sustainability",
+    "mining sector sustainability"
+  ],
+  "affiliations": [
+    "BioProducts Institute",
+    "Clean Energy Research Centre"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

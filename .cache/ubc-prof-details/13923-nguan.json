@@ -1,0 +1,36 @@
+{
+  "nameOnPage": "Christopher Nguan",
+  "researchClassification": [
+    "Urology",
+    "Computer engineering",
+    "Civil engineering, n.e.c.",
+    "Biomedical instrumentation (including diagnostics)",
+    "Medical devices",
+    "Artificial tissues engineering",
+    "Biomedical robotics",
+    "Image guided surgery systems",
+    "Applied immunology (including antibody engineering, xenotransplantation and t-cell therapies)",
+    "Transplantation immunology"
+  ],
+  "interests": [
+    "kidney transplantation",
+    "patient reported outcomes",
+    "medical apps for mobile health",
+    "machine learning analytics of medical imaging",
+    "machine learning analytics of complex medical data outcomes",
+    "Robotics",
+    "quality in healthcare",
+    "environmental impact of healthcare",
+    "Artificial Intelligence in Healthcare",
+    "planetary health intersection with healthcare"
+  ],
+  "affiliations": [
+    "Biomedical Imaging and Artificial Intelligence",
+    "Vancouver Prostate Centre"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

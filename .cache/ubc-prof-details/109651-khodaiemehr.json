@@ -1,0 +1,34 @@
+{
+  "nameOnPage": "Hassan Khodaiemehr",
+  "researchClassification": [
+    "Coding and information theory applied to communications and networks technologies",
+    "Quantum computing",
+    "Number theory",
+    "Machine learning",
+    "Encryption and cryptography",
+    "Distributed systems",
+    "Privacy-enhancing technologies"
+  ],
+  "interests": [
+    "Quantum Error Correcting Codes",
+    "Blockchain",
+    "Post-Quantum Cryptography",
+    "Data Science",
+    "Lattice Codes",
+    "Wireless Communications",
+    "Coding and Information Theory",
+    "Coding Theory",
+    "Physical Layer Security"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "Algebraic Coding Theory: Construction and analysis of error-correcting codes over finite fields, local rings, and lattices.",
+    "Quantum Error Correction: Design and simulation of bosonic codes (continuous-variable, photonic systems), including stabilizer-based and GKP-style cod",
+    "Post-Quantum Cryptography & Blockchain: Security modeling of blockchain protocols against quantum adversaries",
+    "Quantum Simulation Environments (e.g., Skit, PennyLane and Xanadu's photonic simulators)."
+  ]
+}

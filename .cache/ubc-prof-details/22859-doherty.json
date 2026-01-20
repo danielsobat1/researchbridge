@@ -1,0 +1,31 @@
+{
+  "nameOnPage": "Jeff Doherty",
+  "researchClassification": [
+    "Parasitology",
+    "Behavioural ecology",
+    "Animal behaviour",
+    "Insect biology"
+  ],
+  "interests": [
+    "host-parasite interactions",
+    "multidisciplinary research",
+    "host manipulation",
+    "ethology",
+    "Disease Ecology"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "behavioural assays",
+    "movement tracking",
+    "insect rearing",
+    "experimental infections",
+    "transcriptomics",
+    "Proteomics",
+    "Genomics",
+    "Bayesian analysis"
+  ]
+}

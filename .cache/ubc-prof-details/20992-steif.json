@@ -1,0 +1,27 @@
+{
+  "nameOnPage": "Adi Steif",
+  "researchClassification": [
+    "Bioinformatics",
+    "Algorithms and computational genomics",
+    "Genomics",
+    "Cancer genetics",
+    "Mechanisms of carcinogenesis",
+    "Cancer progression and metastasis",
+    "Statistical methods for high throughput data",
+    "High dimensional data analysis"
+  ],
+  "interests": [
+    "Computational Biology",
+    "Bioinformatics",
+    "Machine Learning",
+    "Cancer Genomics",
+    "Single cell sequencing",
+    "Tumour evolution",
+    "Genomic technology development"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

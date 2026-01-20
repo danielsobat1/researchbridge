@@ -1,0 +1,64 @@
+/* Override Tailwind classes with theme variables */
+
+.bg-black {
+  background-color: var(--background) !important;
+}
+
+.text-white {
+  color: var(--foreground) !important;
+}
+
+.border-white\/10,
+.border-white\/20 {
+  border-color: var(--border) !important;
+}
+
+.bg-white\/5 {
+  background-color: var(--card-bg) !important;
+}
+
+.bg-black\/30,
+.bg-white\/5 {
+  background-color: var(--input-bg) !important;
+}
+
+.bg-white {
+  background-color: var(--accent) !important;
+}
+
+.text-black {
+  color: var(--background) !important;
+}
+
+.hover\:bg-white\/90:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+.hover\:bg-white\/10:hover {
+  background-color: var(--card-bg) !important;
+}
+
+.text-white\/70,
+.text-white\/80 {
+  color: color-mix(in srgb, var(--foreground) 80%, transparent) !important;
+}
+
+/* Navigation bar theming */
+nav {
+  background-color: var(--card-bg) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* Underline styling for links */
+.decoration-white\/40 {
+  text-decoration-color: color-mix(in srgb, var(--foreground) 40%, transparent) !important;
+}
+
+.hover\:decoration-white:hover {
+  text-decoration-color: var(--foreground) !important;
+}
+
+/* Input focus states */
+.focus\:border-white\/30:focus {
+  border-color: var(--accent) !important;
+}

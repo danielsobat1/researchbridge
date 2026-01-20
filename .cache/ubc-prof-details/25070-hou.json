@@ -1,0 +1,29 @@
+{
+  "nameOnPage": "Danlin Hou",
+  "researchClassification": [
+    "Civil engineering",
+    "Mechanical engineering"
+  ],
+  "interests": [
+    "Building Retrofits",
+    "Building Performance Simulation with Uncertainty",
+    "Life cycle assessment",
+    "Surrogate Modeling",
+    "Data Analytics",
+    "Energy Prediction and Optimization"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "Machine-Learning",
+    "Data-Driven Modeling",
+    "Physical Modeling",
+    "Regression",
+    "Sensitivity Analysis",
+    "Bayesian Inference",
+    "Building Science"
+  ]
+}

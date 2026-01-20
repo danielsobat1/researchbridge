@@ -1,0 +1,27 @@
+{
+  "nameOnPage": "Xin Tang",
+  "researchClassification": [
+    "Bioinformatics",
+    "Artificial intelligence (AI)",
+    "Cell biology",
+    "Neurosciences, biological and chemical aspects",
+    "Mathematical biology",
+    "Genetics",
+    "Medical and biomedical engineering",
+    "Cancer",
+    "Neurosciences, medical and physiological and health aspects"
+  ],
+  "interests": [
+    "Explainable and Interpretable Learning, Representation Learning, Knowledge Distillation",
+    "Biologically Informed Neural Network, Physically Informed Neural Network",
+    "Knowledge Distillation, Biological LLM, Biomedical Image Processing",
+    "Computational Cell Biology, Single-cell Biology, Multi-omics, Virtual Cell, Spatial Omics",
+    "Brain-Computer Interface, Neuroscience, Brain Mapping",
+    "Cancer Genomics, Development, Aging"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

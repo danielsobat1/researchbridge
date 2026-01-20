@@ -1,0 +1,24 @@
+{
+  "nameOnPage": "Julia Rubin",
+  "researchClassification": [
+    "Computer engineering",
+    "Programming languages and software engineering"
+  ],
+  "interests": [
+    "Computer Systems",
+    "software engineering",
+    "Software quality, security, and robustness",
+    "program analysis",
+    "Adversarial robustness, explainability, and interpretability of ML-based systems",
+    "Mobile and cloud software"
+  ],
+  "affiliations": [
+    "CAIDA: UBC ICICS Centre for Artificial Intelligence Decision-making and Action",
+    "Trustworthiness of Machine-Learning-Based Systems (TrustML)"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nameOnPage": "Gabriela Segat",
+  "researchClassification": [
+    "Mechanisms of carcinogenesis",
+    "Cancer drug development and therapeutics",
+    "Basic pharmacology",
+    "Applied immunology (including antibody engineering, xenotransplantation and t-cell therapies)"
+  ],
+  "interests": [
+    "Hematology",
+    "oncology",
+    "Inflammation",
+    "Epigenetics"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "RNA-seq",
+    "ChIP-seq",
+    "High-parameter Flow Cytometry",
+    "primary cell culture",
+    "Human Synthetic T-ALL model",
+    "in-vivo testing"
+  ]
+}

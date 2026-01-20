@@ -1,0 +1,29 @@
+{
+  "nameOnPage": "Anastasia Gitlina",
+  "researchClassification": [
+    "Natural sciences"
+  ],
+  "interests": [
+    "Material Sciences",
+    "Organic chemistry",
+    "Luminescence",
+    "Photophysics",
+    "Organometallic compounds",
+    "Polymers",
+    "Emitters",
+    "Synthesis",
+    "microelectronics",
+    "optoelectronics"
+  ],
+  "researchOptions": [
+    "I am available and interested in collaborations (e.g. clusters, grants).",
+    "I am interested in and conduct interdisciplinary research.",
+    "I am interested in working with undergraduate students on research projects."
+  ],
+  "methodology": [
+    "Chemical synthesis, purification",
+    "Characterization methods: NMR, HRMS, GC-MS, elemental analysis, FTIR, HPLC, ECD, BET, CV, SEC, GPC, TGA",
+    "XRD analysis",
+    "Photophysical properties: absorption, excitation, emission spectra, excited state lifetimes, PLQY"
+  ]
+}
