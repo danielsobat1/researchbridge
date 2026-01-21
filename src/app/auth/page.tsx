@@ -95,8 +95,12 @@ export default function AuthPage() {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-10">
+    <main className="relative min-h-screen overflow-hidden bg-black text-white">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-transparent to-pink-500/20 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-900/30 via-transparent to-transparent pointer-events-none" />
+      
+      <div className="relative mx-auto max-w-5xl px-6 py-16">
         <div className="max-w-md mx-auto">
           <h1 className="text-3xl font-bold mb-2">ResearchBridge</h1>
           <p className="text-white/70">Create your personalized research profile</p>

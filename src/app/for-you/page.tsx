@@ -244,10 +244,13 @@ export default function ForYouPage() {
   if (!ready) return null;
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-10 space-y-8">
-        <header className="space-y-2">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/50">Daily Scoop</p>
+    <main className=\"relative min-h-screen overflow-hidden bg-black text-white\">
+      {/* Gradient background */}
+      <div className=\"absolute inset-0 bg-gradient-to-br from-pink-600/20 via-transparent to-violet-500/20 pointer-events-none\" />
+      <div className=\"absolute inset-0 bg-[radial-gradient(ellipse_at_top_center,_var(--tw-gradient-stops))] from-fuchsia-900/30 via-transparent to-transparent pointer-events-none\" />
+      
+      <div className=\"relative mx-auto max-w-5xl px-6 py-16 space-y-8\">
+        <header className=\"space-y-3\">\n          <p className=\"text-sm uppercase tracking-[0.2em] text-white/50 font-medium\">Daily Scoop</p>
           <h1 className="text-4xl font-bold">For You</h1>
           <p className="text-white/70">
             Fresh researchers matched to your interests. Updates every day with UBC researchers and global scholars from OpenAlex.

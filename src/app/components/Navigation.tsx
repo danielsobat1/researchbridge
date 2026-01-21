@@ -234,80 +234,81 @@ export default function Navigation() {
               </button>
 
               {showAppearance && (
-              <div className="mt-2 px-4 space-y-4 animate-fadeIn">
-                <div>
-                  <div className="text-sm text-white/60 mb-3">Theme Mode</div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <button
-                      onClick={() => handleThemeChange("dark")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        theme === "dark"
-                          ? "bg-gradient-to-r from-violet-600 to-purple-600 border-2 border-violet-500 shadow-lg shadow-violet-500/30"
-                          : "bg-zinc-900 border border-white/20 hover:border-white/40"
-                      }`}
-                    >
-                      🌙 Dark
-                    </button>
-                    <button
-                      onClick={() => handleThemeChange("light")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        theme === "light"
-                          ? "bg-white text-black border-2 border-gray-300 shadow-lg"
-                          : "bg-gray-200 text-gray-800 border border-gray-300 hover:border-gray-400"
-                      }`}
-                    >
-                      ☀️ Light
-                    </button>
+                <div className="mt-2 px-4 space-y-4 animate-fadeIn">
+                  <div>
+                    <div className="text-sm text-white/60 mb-3">Theme Mode</div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <button
+                        onClick={() => handleThemeChange("dark")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          theme === "dark"
+                            ? "bg-gradient-to-r from-violet-600 to-purple-600 border-2 border-violet-500 shadow-lg shadow-violet-500/30"
+                            : "bg-zinc-900 border border-white/20 hover:border-white/40"
+                        }`}
+                      >
+                        🌙 Dark
+                      </button>
+                      <button
+                        onClick={() => handleThemeChange("light")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          theme === "light"
+                            ? "bg-white text-black border-2 border-gray-300 shadow-lg"
+                            : "bg-gray-200 text-gray-800 border border-gray-300 hover:border-gray-400"
+                        }`}
+                      >
+                        ☀️ Light
+                      </button>
+                    </div>
                   </div>
-                </div>
 
-                <div>
-                  <div className="text-sm text-white/60 mb-3">Color Accent</div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <button
-                      onClick={() => handleColorChange("default")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        colorTheme === "default"
-                          ? "bg-white/10 border-2 border-white/40 shadow-lg"
-                          : "bg-white/5 border border-white/20 hover:border-white/30"
-                      }`}
-                    >
-                      Default
-                    </button>
-                    <button
-                      onClick={() => handleColorChange("blue")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        colorTheme === "blue"
-                          ? "bg-blue-600 border-2 border-blue-400 text-white shadow-lg shadow-blue-500/30"
-                          : "bg-blue-950 border border-blue-800 text-blue-300 hover:border-blue-600"
-                      }`}
-                    >
-                      Blue
-                    </button>
-                    <button
-                      onClick={() => handleColorChange("green")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        colorTheme === "green"
-                          ? "bg-green-600 border-2 border-green-400 text-white shadow-lg shadow-green-500/30"
-                          : "bg-green-950 border border-green-800 text-green-300 hover:border-green-600"
-                      }`}
-                    >
-                      Green
-                    </button>
-                    <button
-                      onClick={() => handleColorChange("purple")}
-                      className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
-                        colorTheme === "purple"
-                          ? "bg-purple-600 border-2 border-purple-400 text-white shadow-lg shadow-purple-500/30"
-                          : "bg-purple-950 border border-purple-800 text-purple-300 hover:border-purple-600"
-                      }`}
-                    >
-                      Purple
-                    </button>
+                  <div>
+                    <div className="text-sm text-white/60 mb-3">Color Accent</div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <button
+                        onClick={() => handleColorChange("default")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          colorTheme === "default"
+                            ? "bg-white/10 border-2 border-white/40 shadow-lg"
+                            : "bg-white/5 border border-white/20 hover:border-white/30"
+                        }`}
+                      >
+                        Default
+                      </button>
+                      <button
+                        onClick={() => handleColorChange("blue")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          colorTheme === "blue"
+                            ? "bg-blue-600 border-2 border-blue-400 text-white shadow-lg shadow-blue-500/30"
+                            : "bg-blue-950 border border-blue-800 text-blue-300 hover:border-blue-600"
+                        }`}
+                      >
+                        Blue
+                      </button>
+                      <button
+                        onClick={() => handleColorChange("green")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          colorTheme === "green"
+                            ? "bg-green-600 border-2 border-green-400 text-white shadow-lg shadow-green-500/30"
+                            : "bg-green-950 border border-green-800 text-green-300 hover:border-green-600"
+                        }`}
+                      >
+                        Green
+                      </button>
+                      <button
+                        onClick={() => handleColorChange("purple")}
+                        className={`px-4 py-3 text-sm rounded-xl transition-all duration-300 font-medium ${
+                          colorTheme === "purple"
+                            ? "bg-purple-600 border-2 border-purple-400 text-white shadow-lg shadow-purple-500/30"
+                            : "bg-purple-950 border border-purple-800 text-purple-300 hover:border-purple-600"
+                        }`}
+                      >
+                        Purple
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       )}

@@ -93,15 +93,23 @@ export default function OpportunitiesPage() {
   }, [q, dept, type, location]);
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-10">
+    <main className="relative min-h-screen overflow-hidden bg-black text-white">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/20 via-transparent to-blue-500/20 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-green-900/30 via-transparent to-transparent pointer-events-none" />
+      
+      <div className="relative mx-auto max-w-5xl px-6 py-16">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <h1 className="text-2xl font-semibold">Opportunities</h1>
-            <p className="mt-2 text-white/70">
+            <h1 className="text-5xl font-bold tracking-tight">
+              <span className="bg-gradient-to-r from-emerald-400 via-green-400 to-cyan-400 bg-clip-text text-transparent">
+                Opportunities
+              </span>
+            </h1>
+            <p className="mt-4 text-lg text-white/60 leading-relaxed">
               Search labs, departments, and skills.
             </p>
-            <p className="mt-2 text-xs text-white/70 bg-white/10 rounded-lg px-3 py-2 w-fit">
+            <p className="mt-3 text-xs text-white/60 bg-white/5 backdrop-blur-sm rounded-xl px-4 py-2 w-fit border border-white/10">
               <span className={`inline-block rounded-full px-2 py-1 font-medium mr-2 ${
                 theme === "light" 
                   ? "bg-yellow-400 text-yellow-900" 
@@ -110,17 +118,17 @@ export default function OpportunitiesPage() {
             </p>
           </div>
 
-<div className="flex gap-2">
+<div className="flex gap-3">
   <a
     href="/my-list"
-    className="rounded-xl border border-white/20 px-4 py-2 text-sm hover:bg-white/10"
+    className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl px-5 py-2.5 text-sm font-medium hover:scale-[1.02] hover:border-white/40 hover:shadow-lg transition-all duration-300"
   >
     My Lists
   </a>
 
   <a
     href="/post"
-    className="w-fit rounded-xl bg-white px-4 py-2 text-sm font-medium text-black hover:bg-white/90"
+    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 px-5 py-2.5 text-sm font-semibold hover:from-emerald-500 hover:to-green-500 hover:scale-[1.02] shadow-lg transition-all duration-300"
   >
     Post an opportunity
   </a>

@@ -154,26 +154,35 @@ export default function DiscoverPage() {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-10">
+    <main className="relative min-h-screen overflow-hidden bg-black text-white">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-600/20 via-transparent to-cyan-500/20 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent pointer-events-none" />
+      
+      <div className="relative mx-auto max-w-7xl px-6 py-16">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <h1 className="text-2xl font-semibold">Discover Researchers</h1>
-            <p className="mt-2 text-white/70">
+            <h1 className="text-5xl font-bold tracking-tight">
+              Discover{" "}
+              <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                Researchers
+              </span>
+            </h1>
+            <p className="mt-4 text-xl text-white/60 leading-relaxed">
               Search researchers by city, institution, name, or research area (OpenAlex + ROR).
             </p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <a
               href="/my-list"
-              className="rounded-xl border border-white/20 px-4 py-2 text-sm hover:bg-white/10"
+              className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl px-5 py-2.5 text-sm font-medium hover:scale-[1.02] hover:border-white/40 hover:shadow-lg transition-all duration-300"
             >
               My Lists
             </a>
             <a
               href="/professors"
-              className="rounded-xl border border-white/20 px-4 py-2 text-sm hover:bg-white/10"
+              className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl px-5 py-2.5 text-sm font-medium hover:scale-[1.02] hover:border-white/40 hover:shadow-lg transition-all duration-300"
             >
               Professors
             </a>
@@ -181,22 +190,22 @@ export default function DiscoverPage() {
         </div>
 
         {/* Filters */}
-        <div className="mt-8 grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 shadow-2xl md:grid-cols-2 lg:grid-cols-3 hover:border-white/20 transition-all duration-500">
           <input
             value={city}
             onChange={(e) => setCity(e.target.value)}
             placeholder="City (e.g., Vancouver)"
-            className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm outline-none focus:border-white/30"
+            className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm outline-none focus:border-violet-500/50 focus:bg-white/10 transition-all duration-300"
           />
           <input
             value={institution}
             onChange={(e) => setInstitution(e.target.value)}
             placeholder="Institution (optional)"
-            className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm outline-none focus:border-white/30"
+            className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm outline-none focus:border-violet-500/50 focus:bg-white/10 transition-all duration-300"
           />
           <input
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange=(e) => setName(e.target.value)}
             placeholder="Researcher name (optional)"
             className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm outline-none focus:border-white/30"
           />
