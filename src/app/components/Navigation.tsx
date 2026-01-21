@@ -131,7 +131,8 @@ export default function Navigation() {
 
       {isOpen && (
         <div className="border-t border-white/10 bg-black/95 backdrop-blur-xl animate-fadeIn">
-          <div className="mx-auto max-w-7xl px-6 py-6 space-y-1">\n            <button
+          <div className="mx-auto max-w-7xl px-6 py-6 space-y-1">
+            <button
               onClick={() => handleNavigation("/discover")}
               className="block w-full text-left px-4 py-3 rounded-xl hover:bg-white/10 transition-all duration-300 text-white/90 hover:text-white font-medium"
             >
