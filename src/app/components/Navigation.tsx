@@ -232,10 +232,8 @@ export default function Navigation() {
                 <span>Appearance</span>
                 <span className="text-xs">{showAppearance ? "▼" : "▶"}</span>
               </button>
-            </button>
 
-
-            {showAppearance && (
+              {showAppearance && (
               <div className="mt-2 px-4 space-y-4 animate-fadeIn">
                 <div>
                   <div className="text-sm text-white/60 mb-3">Theme Mode</div>
