@@ -205,9 +205,9 @@ export default function DiscoverPage() {
           />
           <input
             value={name}
-            onChange=(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             placeholder="Researcher name (optional)"
-            className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm outline-none focus:border-white/30"
+            className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-3 text-sm outline-none focus:border-violet-500/50 focus:bg-white/10 transition-all duration-300"
           />
           <input
             value={area}
